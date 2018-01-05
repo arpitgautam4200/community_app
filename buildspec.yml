@@ -2,14 +2,25 @@ version: 0.1
 phases:
   install:
     commands:
-      - sudo apt-get install ruby-full
-      - sudo yum update -y ruby
-      - sudo yum install -y rubygems
-      - sudo gem update -y --system
+#     - wget http://production.cf.rubygems.org/rubygems/rubygems-1.5.0.tgz
+#     - tar xvf rubygems*
+#     - ruby setup.rb
+#     - apt-get install ruby
+#     - gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+#     - curl -sSL https://get.rvm.io -o rvm.sh
+#     - less rvm.sh
+#     - cat rvm.sh | bash -s stable
+#     - source ~/.rvm/scripts/rvm
+#     - rvm install ruby --default
+      - wget http://ftp.ruby-lang.org/pub/ruby/2.5/ruby-2.5.0.tar.gz
+      - tar -xzvf ruby-2.5.0.tar.gz
+      - ./ruby-2.5.0/configure
+      - ./ruby-2.5.0/make
+      - sudo make install
       - npm install -g bower
       - npm install -g grunt-cli
-      - bower install 
-      - npm install
+      - bower install --allow-root
+      - npm install --save-dev @angular/cli@latest
       - gem sources -a http://rubygems.org
       - gem install bundler
       - bundle install
