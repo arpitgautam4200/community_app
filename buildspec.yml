@@ -12,6 +12,7 @@ phases:
 #     - cat rvm.sh | bash -s stable
 #     - source ~/.rvm/scripts/rvm
 #     - rvm install ruby --default
+      - sudo apt-get update
       - sudo apt-get install rubygems
       - wget http://ftp.ruby-lang.org/pub/ruby/2.5/ruby-2.5.0.tar.gz
       - tar -xzvf ruby-2.5.0.tar.gz
