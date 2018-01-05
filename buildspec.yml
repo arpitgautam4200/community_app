@@ -25,7 +25,7 @@ phases:
       - npm install --save-dev @angular/cli@latest
       - gem sources -a http://rubygems.org
       - gem install bundler
-      - bundle install
+      - bundle --force install
      
 # Create a production ready artifact
     
