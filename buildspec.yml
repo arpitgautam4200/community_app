@@ -16,7 +16,7 @@ phases:
       - tar -xzvf ruby-2.5.0.tar.gz
       - ./ruby-2.5.0/configure
       - ./ruby-2.5.0/make
-      - sudo make install
+      - sudo ./ruby-2.5.0/make install
       - npm install -g bower
       - npm install -g grunt-cli
       - bower install --allow-root
