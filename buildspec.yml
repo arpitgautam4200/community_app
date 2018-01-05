@@ -2,7 +2,6 @@ version: 0.1
 phases:
   install:
     commands:
-      - sudo apt-cache search ruby
       - sudo apt-get install ruby-full
       - sudo yum update -y ruby
       - sudo yum install -y rubygems
