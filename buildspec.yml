@@ -14,11 +14,11 @@ phases:
 #     - rvm install ruby --default
       - sudo apt-get update
       - sudo apt-get install -y ruby
-      - wget http://ftp.ruby-lang.org/pub/ruby/2.5/ruby-2.5.0.tar.gz
-      - tar -xzvf ruby-2.5.0.tar.gz
-      - ./ruby-2.5.0/configure
-      - make
-      - sudo make install
+#      - wget http://ftp.ruby-lang.org/pub/ruby/2.5/ruby-2.5.0.tar.gz
+#      - tar -xzvf ruby-2.5.0.tar.gz
+#      - ./ruby-2.5.0/configure
+#      - make
+#      - sudo make install
       - npm install -g bower
       - npm install -g grunt-cli
       - bower install --allow-root
