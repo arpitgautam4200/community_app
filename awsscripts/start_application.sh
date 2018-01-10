@@ -78,8 +78,8 @@ http {
         server_name  ec2-34-230-86-94.compute-1.amazonaws.com;
         root   /tmp/codedeploy-deployment-staging-area/;
         location /community-app {
-             try_files $uri $uri/ /index.html;
-        }
+        try_files $uri $uri/ /index.html;
+    }
 #       index  index.html index.htm;
         ssl_certificate      softcell_openssl_ss.crt;
         ssl_certificate_key  softcell_openssl_pub.key;
